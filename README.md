@@ -28,5 +28,6 @@ If you're using [Visual Studio Code](https://code.visualstudio.com/) we recommen
 To create an optimised version of the app:
 
 ```bash
-npm run build
+docker build -t fffgre/website .
+docker run -it --rm -p 5000:5000 fffgre/website
 ```
