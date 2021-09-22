@@ -1,0 +1,50 @@
+/* jost-regular - latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/jost-v6-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/jost-v6-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/jost-v6-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/jost-v6-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/jost-v6-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/jost-v6-latin-regular.svg#Jost') format('svg'); /* Legacy iOS */
+}
+
+/* jost-700 - latin */
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/jost-v6-latin-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('/assets/fonts/jost-v6-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/jost-v6-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/jost-v6-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('/assets/fonts/jost-v6-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/jost-v6-latin-700.svg#Jost') format('svg'); /* Legacy iOS */
+}
+
+:root {
+  --color-dark: #2E2E2E;
+  --color-turquoise: #3DCC9F;
+  --color-yellow: #FDBF30;
+  --color-violet: #FDBF30;
+  --color-blue: #30CCFD;
+  --color-red: #EF454E;
+  --color-green: #36DC6C;
+}
+
+* {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: 'Jost';
+  background-color: black;
+}

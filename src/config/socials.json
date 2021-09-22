@@ -1,0 +1,20 @@
+{
+  "socials": [
+    {
+      "icon": "instagram",
+      "link": "https://instagram.com/fff.grenoble"
+    },
+    {
+      "icon": "twitter",
+      "link": "https://twitter.com/fff_grenoble"
+    },
+    {
+      "icon": "facebook",
+      "link": "https://facebook.com/fridaysforfuturegrenoble"
+    },
+    {
+      "icon": "telegram",
+      "link": "https://t.me/fffgrenoble"
+    }
+  ]
+}
