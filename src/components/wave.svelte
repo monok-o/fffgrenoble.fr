@@ -61,10 +61,22 @@
     }
   }
 
-  @media only screen and (max-width: 650px) and (max-height:650px) {
+  @media only screen and (max-width: 370px) {
     .wave {
       width: 150px;
       height: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    .wave {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    .wave {
+      display: none;
     }
   }
 

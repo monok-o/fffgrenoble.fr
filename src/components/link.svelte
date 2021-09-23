@@ -63,4 +63,19 @@
       font-size: 20px;
     }
   }
+
+  @media only screen and (max-width: 330px) {
+    .link {
+      margin-top: 10px;
+    }
+
+    :global([style="link-icon"]) {
+      margin-right:10px;
+      width: 12px;
+    }
+
+    .link span {
+      font-size: 15px;
+    }
+  }
 </style>

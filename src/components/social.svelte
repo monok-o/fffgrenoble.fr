@@ -39,4 +39,17 @@
       height: 30px;
     }
   }
+
+  @media only screen and (max-height: 600px) {
+    .social {
+      margin-top: 0;
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    .social {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
 </style>
