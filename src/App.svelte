@@ -70,4 +70,11 @@
       margin: 15px;
     }
   }
+
+  @media only screen and (max-height: 520px) {
+    .part {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  }
 </style>

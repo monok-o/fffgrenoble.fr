@@ -60,6 +60,25 @@
     }
   }
 
+  @media only screen and (max-width: 370px) {
+    .wave {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  @media only screen and (max-width: 330px) {
+    .wave {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-height: 600px) {
+    .wave {
+      display: none;
+    }
+  }
+
   .topleft {
     left: 0;
     top: 0;
