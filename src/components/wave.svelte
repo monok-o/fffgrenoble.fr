@@ -60,6 +60,13 @@
     }
   }
 
+  @media only screen and (max-width: 650px) and (max-height:650px) {
+    .wave {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
   .topleft {
     left: 0;
     top: 0;

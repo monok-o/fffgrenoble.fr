@@ -61,7 +61,7 @@
     padding: 0;
   }
 
-  @media only screen and (max-width: 540px) {
+  @media only screen and (max-width: 600px) {
     .logo {
       max-width: 250px;
     }
