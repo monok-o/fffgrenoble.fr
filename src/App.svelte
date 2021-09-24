@@ -1,11 +1,14 @@
 <script>
   import Link from "./components/link.svelte";
   import Social from "./components/social.svelte";
-  
+  import Event from "./components/event.svelte"
+
   import Wave from "./components/wave.svelte";
 
   import linkFile from "./config/links.json"
   import socialFile from './config/socials.json'
+  import eventFile from './config/events.json'
+
 </script>
 
 <main>
@@ -26,6 +29,17 @@
         <Social icon="{social.icon}" link="{social.link}" />
       {/each}
     </div>
+
+    <div class="part events">
+      <h2 class="events title">Événements à venir :</h2>
+      <hr class="first_separator">
+      <ul>
+          {#each eventFile.events as event}
+            <li class="event"><Event title={event.title} date={event.date} time={event.time} place={event.place} link={event.link}/></li>
+          {/each}
+      </ul>
+    </div>
+
   </div>
 </main>
 
@@ -61,7 +75,24 @@
     padding: 0;
   }
 
-  @media only screen and (max-width: 540px) {
+  .events{
+    width:100%;
+  }
+
+  .events .title {
+    color:white;
+  }
+
+  .events .first_separator {
+    background-color:black;
+    border : 1.5px solid white;
+  }
+
+  .event {
+    border-bottom: 1.5px solid white;
+  }
+
+  @media only screen and (max-width: 600px) {
     .logo {
       max-width: 250px;
     }
@@ -77,4 +108,6 @@
       margin-bottom: 0px;
     }
   }
+
+  
 </style>
