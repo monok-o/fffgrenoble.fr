@@ -38,8 +38,7 @@
     <FullpageSection center>
       <div class="section">
         <div class="part events">
-          <h2 class="events title">Événements à venir :</h2>
-          <hr class="first_separator">
+          <h2 class="events title">ÉVÉNEMENTS À VENIR :</h2>
           <ul>
               {#each eventFile.events as event}
                 <li class="event"><Event title={event.title} date={event.date} time={event.time} place={event.place} link={event.link}/></li>
@@ -72,6 +71,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    max-width: 550px;
   }
 
   .section .part {
@@ -85,20 +85,12 @@
   }
 
   .events{
-    width:100%;
+    width: 95%;
   }
 
   .events .title {
-    color:white;
-  }
-
-  .events .first_separator {
-    background-color:black;
-    border : 1.5px solid white;
-  }
-
-  .event {
-    border-bottom: 1.5px solid white;
+    font-size: 40px;
+    font-weight: 700;
   }
 
   @media only screen and (max-width: 600px) {
@@ -111,6 +103,12 @@
     }
   }
 
+  @media only screen and (max-width: 540px) {
+    .events .title {
+      font-size: 30px;
+    }
+  }
+
   @media only screen and (max-height: 520px) {
     .part {
       margin-top: 0px;
@@ -118,5 +116,9 @@
     }
   }
 
-  
+  @media only screen and (max-width: 330px) {
+    .events .title {
+      font-size: 20px;
+    }
+  }
 </style>
