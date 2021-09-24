@@ -1,9 +1,11 @@
 <script>
-  import Link from "./components/link.svelte";
-  import Social from "./components/social.svelte";
+  import { Fullpage, FullpageSection } from 'svelte-fullpage'
+
+  import Link from "./components/link.svelte"
+  import Social from "./components/social.svelte"
   import Event from "./components/event.svelte"
 
-  import Wave from "./components/wave.svelte";
+  import Wave from "./components/wave.svelte"
 
   import linkFile from "./config/links.json"
   import socialFile from './config/socials.json'
@@ -15,32 +17,39 @@
   <Wave side="topleft" />
   <Wave side="bottomright" />
 
-  <div class="content">
-    <img class="part logo" src="/assets/logo.svg" alt="Fridays For Future Grenoble" />
-    <div class="part links">
-      <ul>
-      {#each linkFile.links as link}
-        <li><Link content="{link.content.toLocaleUpperCase()}" link="{link.link}" /></li>
-      {/each}
-      </ul>
-    </div>
-    <div class="part socials">
-      {#each socialFile.socials as social}
-        <Social icon="{social.icon}" link="{social.link}" />
-      {/each}
-    </div>
-
-    <div class="part events">
-      <h2 class="events title">Événements à venir :</h2>
-      <hr class="first_separator">
-      <ul>
-          {#each eventFile.events as event}
-            <li class="event"><Event title={event.title} date={event.date} time={event.time} place={event.place} link={event.link}/></li>
+  <Fullpage>
+    <FullpageSection center>
+      <div class="section">
+        <img class="part logo" src="/assets/logo.svg" alt="Fridays For Future Grenoble" />
+        <div class="part links">
+          <ul>
+          {#each linkFile.links as link}
+            <li><Link content="{link.content.toLocaleUpperCase()}" link="{link.link}" /></li>
           {/each}
-      </ul>
-    </div>
+          </ul>
+        </div>
+        <div class="part socials">
+          {#each socialFile.socials as social}
+            <Social icon="{social.icon}" link="{social.link}" />
+          {/each}
+        </div>
+      </div>
+    </FullpageSection>
+    <FullpageSection center>
+      <div class="section">
+        <div class="part events">
+          <h2 class="events title">Événements à venir :</h2>
+          <hr class="first_separator">
+          <ul>
+              {#each eventFile.events as event}
+                <li class="event"><Event title={event.title} date={event.date} time={event.time} place={event.place} link={event.link}/></li>
+              {/each}
+          </ul>
+        <div>
+      </div>
+    </FullpageSection>
+  </Fullpage>
 
-  </div>
 </main>
 
 <style>
@@ -51,23 +60,21 @@
 
     display: flex;
     justify-content: center;
+    align-items: center;
 	}
 
   .logo {
     max-width: 350px;
   }
 
-  .content {
-    position: absolute;
-    top: 50px;
-
+  .section {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
 
-  .content .part {
+  .section .part {
     margin-top: 15px;
     margin-bottom: 15px;
   }
@@ -99,7 +106,7 @@
       max-width: 250px;
     }
 
-    .content {
+    .section {
       margin: 15px;
     }
   }
