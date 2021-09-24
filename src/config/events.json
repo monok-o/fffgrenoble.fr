@@ -1,0 +1,25 @@
+{
+    "events":[
+        {
+            "title":"Marche des Fiertés de Grenoble",
+            "date":"25/09/2021",
+            "time":"13:00",
+            "place":"Anneau de Vitesse",
+            "link":"https://vroomvroom.fr"
+        },
+        {
+            "title":"Village des Alternatives",
+            "date":"25/09/2021",
+            "time":"13:00-18:00",
+            "place":"Parc Paul Mistral",
+            "link":"https://vroomvroom.fr"
+        },
+        {
+            "title":"Manifestation en soutien au 38 centre social tchoukar",
+            "date":"26/09/2021",
+            "time":"14:00",
+            "place":"Pl. St-Bruno",
+            "link":"https://vroomvroom.fr"
+        }
+    ]
+}
