@@ -26,7 +26,7 @@
     left: 0;
   }
   .wave {
-    position: absolute;
+    position: fixed;
 
     width: 550px;
     height: 550px;

@@ -50,7 +50,6 @@
 		top: 0; bottom: 0;
 
     display: flex;
-    align-items: center;
     justify-content: center;
 	}
 
@@ -59,6 +58,9 @@
   }
 
   .content {
+    position: absolute;
+    top: 50px;
+
     display: flex;
     justify-content: center;
     align-items: center;
