@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "rollup -c",
-    "dev": "rollup -c -w",
-    "start": "sirv public --no-clear"
+    "build": "rollup -c ./view/rollup.config.js",
+    "dev": "rollup -c ./view/rollup.config.js -w ",
+    "start": "sirv view/public --no-clear",
+    "prod": "rollup -c ./view/rollup.config.js & go run main.go"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
