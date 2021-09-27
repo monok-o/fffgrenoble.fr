@@ -1,25 +1,19 @@
 {
     "events":[
         {
-            "title":"Marche des Fiertés de Grenoble",
-            "date":"25/09/2021",
-            "time":"13:00",
-            "place":"Anneau de Vitesse",
-            "link":"https://www.gaypride.fr/event/grenoble-pride-festival-2021/"
+            "title":"Ciné-Débat : I am Greta",
+            "date":"27/09/2021",
+            "time":"20:15",
+            "place":"Cinéma Le Club",
+            "link":"https://www.ici-grenoble.org/evenement/cine-debat-i-am-greta-sur-le-parcours-de-lactiviste-greta-thunberg"
         },
         {
-            "title":"Village des Alternatives",
-            "date":"25/09/2021",
-            "time":"13:00-18:00",
-            "place":"Parc Paul Mistral",
-            "link":"https://alternatiba.eu/grenoble/2021/08/26/village-des-alternatives-venez-experimenter-le-vivre-autrement/"
-        },
-        {
-            "title":"Manifestation en soutien au 38 centre social tchoukar",
-            "date":"26/09/2021",
-            "time":"14:00",
-            "place":"Pl. St-Bruno",
-            "link":"https://facebook.com/events/589104442264084/"
+            "title":"Ciné-Débat : I am Greta avec Together for Earth Grenoble",
+            "date":"28/09/2021",
+            "time":"20:00",
+            "place":"Cinéma Mon Ciné (St-Martin-d'Hères)",
+            "link":"https://www.ici-grenoble.org/evenement/cine-debat-i-am-greta-sur-le-parcours-militant-de-greta-thunberg"
         }
+       
     ]
 }

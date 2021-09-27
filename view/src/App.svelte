@@ -88,10 +88,6 @@
     width: 95%;
   }
 
-  .events .title {
-    font-size: 40px;
-    font-weight: 700;
-  }
 
   @media only screen and (max-width: 600px) {
     .logo {

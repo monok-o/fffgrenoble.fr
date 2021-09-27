@@ -10,7 +10,7 @@
 
 <div>
   <Separator />
-  <h3 class="head text title">{title}</h3>
+  <h3 class="text title">{title}</h3>
   <div class="dateplace text">
     <p>{date} {#if time!=""}
       - {time}
@@ -26,6 +26,7 @@
 .title {
   font-size: 30px;
   font-weight: 700;
+  margin:10px 0;
 }
 
 .dateplace {
