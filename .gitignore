@@ -5,3 +5,5 @@ view/public/build/
 .DS_Store
 
 main
+
+database.db
