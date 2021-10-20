@@ -1,0 +1,32 @@
+{
+    "actions":[
+        {
+            "title":"Découvrir nos modes d'action",
+            "backgroundImage":"toto.jpg",
+            "description" : "Fridays for Future Grenoble utilise de nombreux modes d'action pour défendre la justice écologique et sociale. Découvrez-en quelques-uns dans ce diaporama !"
+        },
+        {
+            "title":"Marches et manifestations",
+            "backgroundImage":"toto.jpg",
+            "description" : "Défiler dans les rues en demandant “à quoi bon continuer à étudier si notre avenir sur cette planète est compromis ?” a été notre premier mode d’action d’envergure dès mars 2019, avec pour bout de visibiliser l’urgence écologique et sociale, et de dénoncer la culpabilité des gouvernements dans cette dernière."
+        },
+        {
+            "title":"Actions de désobéissance civile",
+            "backgroundImage":"toto.jpg",
+            "description" : "Bien qu’illégales par natures, ces actions consistant à délibérément enfreindre une loi ou une règle pour revendiquer ou dénoncer jouent un rôle important dans la défense de la justice écologique et sociale en permettant de mettre en avant l’inaptitude du système actuel à faire face aux crises présentes et futures."
+        },
+
+        {
+            "title":"Actions de sensibilisation",
+            "backgroundImage":"toto.jpg",
+            "description" : "Car il est nécessaire d’informer sur les causes pour lesquelles nous luttons pour inciter plus de monde à passer à l’action, nous nous efforçons de sensibiliser le public aux enjeux écologiques et sociaux dans l’espace public et sur les réseaux sociaux."
+        },
+
+        {
+            "title":"Soutien aux autres luttes",
+            "backgroundImage":"toto.jpg",
+            "description" : "Les enjeux écologiques sont étroitement liés à d’autres thématiques dont nous nous efforçons de soutenir les combats : lutte contre les inégalités sociales, le racisme, les LGBTQIA+phobies, les violences de genre,...Fridays for Future Grenoble cherche à être allié de ces luttes."
+        }
+        
+    ]
+}
