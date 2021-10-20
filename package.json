@@ -5,10 +5,11 @@
   "scripts": {
     "build": "rollup -c ./view/rollup.config.js",
     "dev": "rollup -c ./view/rollup.config.js -w ",
-    "start": "sirv view/public --no-clear",
+    "start": "sirv view/public --no-clear --host",
     "prod": "rollup -c ./view/rollup.config.js & go run main.go"
   },
   "devDependencies": {
+    "@beyonk/svelte-carousel": "^2.8.0",
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
     "rollup": "^2.3.4",

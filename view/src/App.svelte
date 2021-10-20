@@ -1,23 +1,37 @@
 <script>
-  import { Fullpage, FullpageSection } from 'svelte-fullpage'
+  import { Fullpage, FullpageSection, FullpageSlide } from 'svelte-fullpage'
 
   import Link from "./components/link.svelte"
   import Social from "./components/social.svelte"
   import Event from "./components/event.svelte"
 
   import Wave from "./components/wave.svelte"
+  
+  import ActionSlide from "./components/actionSlide.svelte"
 
   import linkFile from "./config/links.json"
   import socialFile from './config/socials.json'
   import eventFile from './config/events.json'
+  import actionsFile from './config/actions.json'
 
+  
+  const sections = [
+    "Accueil",
+    "Événements à venir",
+    "Nos modes d'action"
+  ]
+
+  //Must be manually updated to be able to access slides
+  const slides = [
+    'Introduction','Marches et manifestations','Actions de désobéissance civile',"Actions de sensibilisation","Soutien aux autres luttes"
+  ]
 </script>
 
 <main>
   <Wave side="topleft" />
   <Wave side="bottomright" />
 
-  <Fullpage>
+  <Fullpage {sections}>
     <FullpageSection center>
       <div class="section">
         <img class="part logo" src="/assets/logo.svg" alt="Fridays For Future Grenoble" />
@@ -46,6 +60,11 @@
           </ul>
         <div>
       </div>
+    </FullpageSection>
+    <FullpageSection center {slides} arrows>
+      {#each actionsFile.actions as action}
+        <ActionSlide {...action}/>
+      {/each}
     </FullpageSection>
   </Fullpage>
 
@@ -100,7 +119,7 @@
   }
 
   @media only screen and (max-width: 540px) {
-    .events .title {
+     .title {
       font-size: 30px;
     }
   }
@@ -113,7 +132,7 @@
   }
 
   @media only screen and (max-width: 330px) {
-    .events .title {
+    .title {
       font-size: 20px;
     }
   }
