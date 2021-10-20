@@ -1,5 +1,6 @@
 <script>
   import { Fullpage, FullpageSection } from 'svelte-fullpage'
+  import {Carousel} from "@beyonk/svelte-carousel"
 
   import Link from "./components/link.svelte"
   import Social from "./components/social.svelte"
@@ -45,6 +46,14 @@
               {/each}
           </ul>
         <div>
+      </div>
+    </FullpageSection>
+    <FullpageSection center>
+      <div class="section">
+        <div class="part actions">
+
+        </div>
+
       </div>
     </FullpageSection>
   </Fullpage>
